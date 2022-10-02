@@ -3,8 +3,18 @@
 
 <section>
 	<p>From the liver of <%= beer.owner.name %>...</p>
-  <h1><%= beer.name %> </h1>
+  <h1><%= beer.name %></h1>
   <h2>This beer is <%= beer.great ? 'great' : 'bad' %></h2>
+  <% if (user) { %>
+    <form
+      action="/beers/<%= beer._id %>/flip-great?_method=PATCH"
+      method="POST"
+      >
+      <button class="btn" type="submit">
+        This beer is <%= beer.great ? 'bad' : 'great' %> 
+      </button>
+    </form>
+  <% } %>    
 </section>
 
 <%- include('../partials/footer') %>

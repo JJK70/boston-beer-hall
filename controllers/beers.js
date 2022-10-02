@@ -42,8 +42,24 @@ function show(req, res) {
   })
 }
 
+function flipGreat(req, res) {
+  Beer.findById(req.params.id)
+  .then(beer => {
+    beer.great = !beer.great
+    beer.save()
+    .then(()=> {
+      res.redirect(`/beers/${beer._id}`)
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/beers')
+  })
+}
+
 export {
   index,
   create,
   show,
+  flipGreat,
 }
