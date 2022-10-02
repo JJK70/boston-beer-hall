@@ -3,10 +3,26 @@
 
 <section>
   <h1>Beers</h1>
+  <section>
+    <h1>Beers!</h1>
+    <% if (user) { %>
+      <h2>Add a Beer!</h2>
+      <form action="/beers" method="POST">
+        <label>
+          Name: 
+          <input type="text" name="name" autocomplete="off">
+        </label>
+        <label>
+          Tasty?
+          <input type="checkbox" name="great">
+        </label>
+        <button type="submit">Add Beer</button>
+      </form>
+    <% } %>
   <h2>See the Beers Below!</h2>
 	<ul>
   <% beers.forEach(beer => { %>
-    <li>🌮 <%= beer.name %> is <%= beer.tasty ? 'Great!' : 'Bad' %></li>
+    <li><%= beer.name %> is <%= beer.tasty ? 'Great!' : 'Bad' %></li>
   <% }) %>
   </ul>
 </section>

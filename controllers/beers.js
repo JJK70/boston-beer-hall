@@ -14,6 +14,20 @@ function index(req, res) {
   })
 }
 
+function create(req, res) {
+  req.body.owner = req.user.profile._id
+  req.body.great = !!req.body.great
+  Beer.create(req.body)
+  .then(beer => {
+    res.redirect('/beers')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/beers')
+  })
+}
+
 export {
-  index
+  index,
+  create,
 }
