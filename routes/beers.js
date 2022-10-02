@@ -11,6 +11,7 @@ router.post('/', beersCtrl.create)
 router.post('/', isLoggedIn, beersCtrl.create)
 router.patch('/:id/flip-great', isLoggedIn, beersCtrl.flipGreat)
 router.put('/:id', isLoggedIn, beersCtrl.update)
+router.delete('/:id', isLoggedIn, beersCtrl.delete)
 
 export {
   router

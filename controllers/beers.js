@@ -90,6 +90,24 @@ function update(req, res) {
   })
 }
 
+function deleteBeer(req, res) {
+  Beer.findById(req.params.id)
+  .then(beer => {
+    if (beer.owner.equals(req.user.profile._id)) {
+      beer.delete()
+      .then(() => {
+        res.redirect('/beers')
+      })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }   
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/beers')
+  })
+}
+
 export {
   index,
   create,
@@ -97,4 +115,5 @@ export {
   flipGreat,
   edit,
   update,
+  deleteBeer as delete,
 }
