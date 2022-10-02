@@ -1,0 +1,10 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+	<p>From the liver of <%= beer.owner.name %>...</p>
+  <h1><%= beer.name %> </h1>
+  <h2>This beer is <%= beer.great ? 'great' : 'bad' %></h2>
+</section>
+
+<%- include('../partials/footer') %>

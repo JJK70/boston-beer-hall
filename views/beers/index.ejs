@@ -22,7 +22,9 @@
   <h2>See the Beers Below!</h2>
 	<ul>
   <% beers.forEach(beer => { %>
-    <li><%= beer.name %> is <%= beer.tasty ? 'Great!' : 'Bad' %></li>
+    <li><a href="/beers/<%= beer._id %>"><%= beer.name %></a> 
+        is <%= beer.great ? 'great' : 'bad' %> 
+    </li>
   <% }) %>
   </ul>
 </section>
