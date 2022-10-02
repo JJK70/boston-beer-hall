@@ -26,17 +26,17 @@
   <% } %>
   <% if (profile.snacks.length)  {%>
     <h2>
-      <%= isSelf ? "You have" : `${profile.name} has` %> snacks! Go watch some sports or your favorite show!
+      <%= isSelf ? "Your snacks are below" : `${profile.name}` %>! Go watch some sports or your favorite show!
     </h2>
     <% profile.snacks.forEach(snack => { %>
       <h3>
-        <%= getRandomSnack() %> 
+        <%= getRandomSnacks() %> 
         <%= snack.name %> is a <%= snack.type %> snack!
       </h3>
     <% }) %>
   <% } else { %>
     <h2>
-      <%= isSelf ? "You don't" : `${profile.name} doesn't` %> have any snacks. How weird!
+      <%= isSelf ? "You don't" : `${profile.name} doesn't` %> have any snacks. SAD!!
     </h2> 
   <% } %>
 </main>
