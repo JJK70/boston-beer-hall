@@ -71,10 +71,30 @@ function edit (req, res) {
   })
 }
 
+function update(req, res) {
+  Beer.findById(req.params.id)
+  .then(beer => {
+    if (beer.owner.equals(req.user.profile._id)) {
+      req.body.great = !!req.body.great
+      beer.updateOne(req.body)
+      .then(()=> {
+        res.redirect(`/beers/${beer._id}`)
+      })
+    } else {
+      throw new Error('🚫 Not authorized 🚫')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/beers`)
+  })
+}
+
 export {
   index,
   create,
   show,
   flipGreat,
   edit,
+  update,
 }
