@@ -14,7 +14,12 @@
         This beer is <%= beer.great ? 'bad' : 'great' %> 
       </button>
     </form>
-  <% } %>    
+  <% } %>
+  <% if (beer.owner.equals(user?.profile._id)) { %>
+    <a href="/beers/<%= beer._id %>/edit">
+    <button class="btn">Edit this beer!</button>
+    </a>
+  <% } %>     
 </section>
 
 <%- include('../partials/footer') %>

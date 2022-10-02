@@ -57,9 +57,24 @@ function flipGreat(req, res) {
   })
 }
 
+function edit (req, res) {
+  Beer.findById(req.params.id)
+  .then(beer => {
+    res.render('beers/edit', {
+      beer, 
+      title: "edit beer"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/beers')
+  })
+}
+
 export {
   index,
   create,
   show,
   flipGreat,
+  edit,
 }
