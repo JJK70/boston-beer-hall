@@ -22,6 +22,10 @@ function show(req, res) {
       title: `Profile ${profile.name}'s profile`,
       profile,
       isSelf,
+      getRandomSnacks: () => {
+        const snacks = ["🐈", "🐱", "😸", "😹", "😺", "😻", "😼", "😾", "🙀"]
+        return snacks[Math.floor(Math.random() * snacks.length)]
+      }
     })
   })
   .catch((err) => {
@@ -30,7 +34,27 @@ function show(req, res) {
   })
 }
 
+function createSnack(req, res) {
+  Profile.findById(req.user.profile._id)
+  .then(profile => {
+    profile.snacks.push(req.body)
+    profile.save()
+    .then(() => {
+      res.redirect(`/profiles/${req.user.profile._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect(`/profiles/${req.user.profile._id}`)
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/profiles/${req.user.profile._id}`)
+  })
+}
+
 export {
   index,
   show,
+  createSnack,
 }

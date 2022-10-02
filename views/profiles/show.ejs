@@ -1,0 +1,44 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<main>
+  <div>
+    <img 
+      class="profile-avatar"
+      src="<%= profile.avatar %>" 
+      alt="<%= profile.name %>'s avatar"
+    >
+  </div>
+  <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
+  <% if (isSelf)  {%> 
+    <h2>Add a snack!</h2>
+    <form action="/profiles/<%= profile._id %>/snacks" method="POST">
+      <label>
+        Snack: 
+        <input type="text" name="name" autocomplete="off">
+      </label>
+      <label>
+        Type(sweet or salty): 
+        <input type="number" name="type" autocomplete="off">
+      </label>
+      <button type="submit">Add Snack</button>
+    </form>
+  <% } %>
+  <% if (profile.snacks.length)  {%>
+    <h2>
+      <%= isSelf ? "You have" : `${profile.name} has` %> snacks! Go watch some sports or your favorite show!
+    </h2>
+    <% profile.snacks.forEach(snack => { %>
+      <h3>
+        <%= getRandomSnack() %> 
+        <%= snack.name %> is a <%= snack.type %> snack!
+      </h3>
+    <% }) %>
+  <% } else { %>
+    <h2>
+      <%= isSelf ? "You don't" : `${profile.name} doesn't` %> have any snacks. How weird!
+    </h2> 
+  <% } %>
+</main>
+
+<%- include('../partials/footer') %>
