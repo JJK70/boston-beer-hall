@@ -37,14 +37,14 @@
             method="POST"
             style="display: inline-block;"
           >
-            <button type="submit">Delete Snack <%= snack.name %></button>
+            <button type="submit">Delete <%= snack.name %></button>
           </form>
         <% } %>
       </h3>
     <% }) %>
   <% } else { %>
     <h2>
-      <%= isSelf ? "You": `${profile.name} doesn't` %> don't have any snacks. SAD!!
+      <%= isSelf ? "You": `${profile.name} doesn't` %> don't have any snacks(🍕 🍿 🍪 🧁). SAD!!
     </h2>
   <% } %>
 </main>

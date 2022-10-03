@@ -1,6 +1,8 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="./stylesheets/profiles/index.css">
 <%- include('../partials/nav') %>
 
+<main>
   <section>
     <h1>Beers!</h1>
     <% if (user) { %>
@@ -26,5 +28,6 @@
   <% }) %>
   </ul>
 </section>
+</main>
 
 <%- include('../partials/footer') %>
