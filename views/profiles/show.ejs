@@ -21,7 +21,7 @@
         Type(sweet or salty): 
         <input type="text" name="type" autocomplete="off">
       </label>
-      <button type="submit">Add Snack</button>
+      <button type="submit" class="btn btn-success btn-lg">Add Snack</button>
     </form>
   <% } %>
   <% if (profile.snacks.length)  {%>
@@ -37,7 +37,7 @@
             method="POST"
             style="display: inline-block;"
           >
-            <button type="submit">Delete <%= snack.name %></button>
+            <button type="submit" class="btn btn-danger btn-sm">Delete <%= snack.name %></button>
           </form>
         <% } %>
       </h3>

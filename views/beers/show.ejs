@@ -17,10 +17,10 @@
   <% } %>
   <% if (beer.owner.equals(user?.profile._id)) { %>
     <a href="/beers/<%= beer._id %>/edit">
-    <button class="btn">Edit this beer!</button>
+    <button class="btn btn-warning btn-lg">Edit this beer!</button>
     </a>
     <form action="/beers/<%= beer._id %>?_method=DELETE" method="POST">
-      <button class="btn" type="submit">Delete this Beer...</button>
+      <button class="btn btn-danger btn-lg" type="submit">Delete this Beer...</button>
     </form>
   <% } %>     
 </section>
