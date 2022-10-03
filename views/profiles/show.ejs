@@ -19,7 +19,7 @@
       </label>
       <label>
         Type(sweet or salty): 
-        <input type="number" name="type" autocomplete="off">
+        <input type="text" name="type" autocomplete="off">
       </label>
       <button type="submit">Add Snack</button>
     </form>
@@ -36,8 +36,8 @@
     <% }) %>
   <% } else { %>
     <h2>
-      <%= isSelf ? "You don't" : `${profile.name} doesn't` %> have any snacks. SAD!!
-    </h2> 
+      <%= isSelf ? "You: `${profile.name} doesn't` %> don't have any snacks. SAD!!
+    </h2>
   <% } %>
 </main>
 
