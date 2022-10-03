@@ -23,7 +23,7 @@ function show(req, res) {
       profile,
       isSelf,
       getRandomSnacks: () => {
-        const snacks = ["🐈", "🐱", "😸", "😹", "😺", "😻", "😼", "😾", "🙀"]
+        // const snacks = ["🐈", "🐱", "😸", "😹", "😺", "😻", "😼", "😾", "🙀"]
         return snacks[Math.floor(Math.random() * snacks.length)]
       }
     })
