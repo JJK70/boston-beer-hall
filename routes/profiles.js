@@ -7,6 +7,7 @@ const router = Router()
 router.get('/', isLoggedIn, profilesCtrl.index)
 router.get('/:id', isLoggedIn, profilesCtrl.show)
 router.post('/:id/snacks', isLoggedIn, profilesCtrl.createSnack)
+router.delete('/snacks/:id', isLoggedIn, profilesCtrl.deleteSnack)
 
 
 export {

@@ -19,7 +19,7 @@
       </label>
       <label>
         Type(sweet or salty): 
-        <input type="number" name="type" autocomplete="off">
+        <input type="text" name="type" autocomplete="off">
       </label>
       <button type="submit">Add Snack</button>
     </form>
@@ -30,8 +30,16 @@
     </h2>
     <% profile.snacks.forEach(snack => { %>
       <h3>
-        <%= getRandomSnacks() %> 
         <%= snack.name %> is a <%= snack.type %> snack!
+        <% if (isSelf) { %>   
+        <form 
+            action="/profiles/snacks/<%= snack._id %>?_method=DELETE" 
+            method="POST"
+            style="display: inline-block;"
+          >
+            <button type="submit">Delete Snack <%= snack.name %></button>
+          </form>
+        <% } %>
       </h3>
     <% }) %>
   <% } else { %>
