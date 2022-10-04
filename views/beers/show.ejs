@@ -1,28 +1,32 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<section>
-	<p>From the liver of <%= beer.owner.name %>...</p>
-  <h1><%= beer.name %></h1>
-  <h2>This beer is <%= beer.great ? 'great' : 'bad' %></h2>
+<sectio class="text-center">
+	
+  <h1 class="text-center mt-5">🍻Boston Beer Hall🍻</h1>
+  <h2 class="mt-3"><%= beer.name %></h2>
+  <h2 class="mt-3">This beer is <%= beer.great ? 'great' : 'bad' %></h2>
+  <h3 class="mt-3 mb-2">Edit your beer <%= beer.owner.name %>...</h3>
   <% if (user) { %>
     <form
       action="/beers/<%= beer._id %>/flip-great?_method=PATCH"
       method="POST"
       >
-      <button class="btn btn-light" type="submit">
+      <button class="btn btn-light btn-md" type="submit">
         Change beer to <%= beer.great ? 'bad' : 'great' %> 
       </button>
     </form>
   <% } %>
+  <section class="text-center pt-0">
   <% if (beer.owner.equals(user?.profile._id)) { %>
     <a href="/beers/<%= beer._id %>/edit">
-    <button class="btn btn-warning btn-lg">Edit this beer!</button>
+    <button class="btn btn-warning btn-md">Edit this beer!</button>
     </a>
     <form action="/beers/<%= beer._id %>?_method=DELETE" method="POST">
-      <button class="btn btn-danger btn-lg" type="submit">Delete this Beer...</button>
+      <button class="btn btn-danger btn-md" type="submit">Delete this Beer...</button>
     </form>
-  <% } %>     
+  <% } %>  
+</section>   
 </section>
 
 <%- include('../partials/footer') %>

@@ -9,7 +9,8 @@
       alt="<%= profile.name %>'s avatar"
     >
   </div>
-  <h1 class="mt-4">It's <%= isSelf ? "you" : profile.name %>!</h1>
+  <h1 class="text-center mt-5">🍻Boston Beer Hall🍻</h1>
+  <h2 class="mt-4">It's <%= isSelf ? "you" : profile.name %>!</h2>
   <% if (isSelf)  {%> 
     <h2 class="mt-3 mb-4">Add a snack!</h2>
     <form action="/profiles/<%= profile._id %>/snacks" method="POST">
