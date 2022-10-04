@@ -3,11 +3,11 @@
 
 <main style="width: 800px, margin: 0 auto;">
   <h1 class="mt-4">🍻Boston Beer Hall🍻</h1>
-  <h2 class="mt-2">Hello, <%= user ? user.profile.name : "friend" %> and Welcome!</h2>
+  <h2 class="mt-2">Hello and Welcome <%= user ? user.profile.name : "friend" %></h2>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
-        src="<%= user.profile.avatar %>" 
+        src="<%= user.profile.avatar %>"
         alt="<%= user.profile.name %> avatar"
       />
     </div>
@@ -20,10 +20,10 @@
     </div>
     <div class="carousel-inner mt-3 mb-5">
       <div class="carousel-item active">
-        <img src="/assets/img/unsplash_george_bakos.jpeg" class="d-block w-100" alt="Beer Taps Image">
+        <img src="/assets/img/unsplash_kazeund.jpeg" class="d-block w-100" alt="Beer Taps Image">
       </div>
       <div class="carousel-item">
-        <img src="/assets/img/unsplash_kazeund.jpeg" class="d-block w-100" alt="Cheers Image">
+        <img src="/assets/img/unsplash_george_bakos.jpeg" class="d-block w-100" alt="Cheers Image">
       </div>
       <div class="carousel-item">
         <img src="/assets/img/unsplash_meritt_thomas.jpeg" class="d-block w-100" alt="Beer Flights">

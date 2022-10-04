@@ -1,0 +1,32 @@
+#ale {
+  background-color: #fff897;
+}
+
+
+#lager {
+  background-color: #FFD580;
+}
+
+#pilsner {
+  background-color: #FFC000;
+}
+
+#stout {
+  background-color: #232b2b;
+}
+
+#porter {
+  background-color: #c58038;
+}
+
+.beer-text {
+  color: white;
+}
+
+.beer-form {
+  text-align: center;
+}
+
+.great {
+  padding: 20px;
+}
