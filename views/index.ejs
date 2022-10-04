@@ -5,7 +5,7 @@
   <h1 class="mt-4">🍻Boston Beer Hall🍻</h1>
   <h2 class="mt-2">Hello and Welcome <%= user ? user.profile.name : "friend" %></h2>
   <% if (user?.profile.avatar) { %>
-    <div>
+    <div class="mt-3 mb-3">
       <img
         src="<%= user.profile.avatar %>"
         alt="<%= user.profile.name %> avatar"
