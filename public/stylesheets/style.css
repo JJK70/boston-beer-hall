@@ -29,6 +29,9 @@ nav {
   justify-content: center;
   padding: 10px;
   min-height: 60px;
+  border: 2px solid #696969;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
 }
 
 main {

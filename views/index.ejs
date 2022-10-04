@@ -1,8 +1,8 @@
 <%- include('./partials/html-head') %>
 <%- include('./partials/nav') %>
 
-<main>
-  <h1>Boston Beer Hall</h1>
+<main style="width: 800px, margin: 0 auto;">
+  <h1>🍻Boston Beer Hall🍻</h1>
   <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
   <% if (user?.profile.avatar) { %>
     <div>
@@ -12,7 +12,7 @@
       />
     </div>
   <% } %>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="width: 1200px;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
