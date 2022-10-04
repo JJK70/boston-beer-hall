@@ -15,13 +15,13 @@
     <form action="/profiles/<%= profile._id %>/snacks" method="POST">
       <label>
         Snack: 
-        <input type="text" name="name" autocomplete="off">
+        <input type="text" name="name" class="form-control" placeholder="Enter a Snack" autocomplete="off">
       </label>
       <label>
-        Type(sweet or salty): 
-        <input type="text" name="type" autocomplete="off">
+        Type: 
+        <input type="text" name="type" class="form-control" placeholder="Sweet, Salty or Both" autocomplete="off">
       </label>
-      <button type="submit" class="btn btn-success btn-lg">Add Snack</button>
+      <button type="submit" class="btn btn-success btn-sm">Add Snack</button>
     </form>
   <% } %>
   <% if (profile.snacks.length)  {%>

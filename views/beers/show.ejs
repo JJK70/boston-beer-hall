@@ -10,8 +10,8 @@
       action="/beers/<%= beer._id %>/flip-great?_method=PATCH"
       method="POST"
       >
-      <button class="btn" type="submit">
-        This beer is <%= beer.great ? 'bad' : 'great' %> 
+      <button class="btn btn-light" type="submit">
+        Change beer to <%= beer.great ? 'bad' : 'great' %> 
       </button>
     </form>
   <% } %>
