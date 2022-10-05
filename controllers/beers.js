@@ -1,4 +1,5 @@
 import { Beer } from '../models/beer.js'
+import { Profile } from '../models/profile.js'
 
 function index(req, res) {
   Beer.find({})
@@ -19,7 +20,12 @@ function create(req, res) {
   req.body.great = !!req.body.great
   Beer.create(req.body)
   .then(beer => {
-    res.redirect('/beers')
+    Profile.findById(req.user.profile._id)
+    .then(profile => {
+      profile.favorites.push(beer._id)
+      profile.save()
+      res.redirect('/beers')
+    })
   })
   .catch(err => {
     console.log(err)

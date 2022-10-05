@@ -12,6 +12,7 @@ const snackSchema = new Schema({
 const profileSchema = new Schema({
   name: String,
   avatar: String,
+  favorites: [{ type: Schema.Types.ObjectId, ref:"Beer" }] ,
   snacks: [snackSchema]
 }, {
   timestamps: true
