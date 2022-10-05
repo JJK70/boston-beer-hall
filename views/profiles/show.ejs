@@ -10,9 +10,13 @@
     >
   </div>
   <h1 class="text-center mt-5">🍻Boston Beer Hall🍻</h1>
-  <h2 class="mt-4">It's <%= isSelf ? "you" : profile.name %>!</h2>
+  <h2 class="mb-3">It's <%= isSelf ? "you" : profile.name %>!</h2>
   <% if (isSelf)  {%> 
-    <h2 class="mt-3 mb-4">Add a snack!</h2>
+    <div class="row">
+      <div class="col-sm-6 col-lg-9">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Add a snack!</h2>
     <form action="/profiles/<%= profile._id %>/snacks" method="POST">
       <label>
         Snack: 
@@ -26,11 +30,11 @@
     </form>
   <% } %>
   <% if (profile.snacks.length)  {%>
-    <h2 class="mt-3">
-      <%= isSelf ? "Your snacks are below" : `${profile.name}` %>! Go watch some sports or your favorite show!
-    </h2>
+    <h5 class="mt-3">
+      <%= isSelf ? "Your snacks are below" : `${profile.name}` %>!<br />Go watch some sports or your favorite show!
+    </h5>
     <% profile.snacks.forEach(snack => { %>
-      <h3>
+      <h5 class="mb-0">
         <%= snack.name %> is a <%= snack.type %> snack!
         <% if (isSelf) { %>   
         <form 
@@ -41,19 +45,29 @@
             <button type="submit" class="btn btn-danger btn-sm">Delete <%= snack.name %></button>
           </form>
         <% } %>
-      </h3>
+        </h5>
     <% }) %>
   <% } else { %>
     <h2 class="mt-3">
       <%= isSelf ? "You": `${profile.name}` %> don't have any snacks(🍕 🍿 🍪 🧁), SAD!!
     </h2>
-  <% } %>
-  <h2>Favorite Beers:</h2>
-    <ul>
-      <% profile.favorites.forEach(favorite => { %>
-          <li><%= favorite.name %></li>
-          <% }) %>
-    </ul>
+  <% } %>         
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Favorite Beers</h2>
+          <ul>
+            <% profile.favorites.forEach(favorite => { %>
+            <li class="mb-2"><%= favorite.name %></li>
+        <% }) %>
+         </ul>  
+       </div>
+     </div>
+   </div>
+  </div>
 </main>
 
 <%- include('../partials/footer') %>
