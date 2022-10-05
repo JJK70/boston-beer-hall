@@ -16,6 +16,7 @@ function index(req, res) {
 
 function show(req, res) {
   Profile.findById(req.params.id)
+  .populate("favorites")
   .then(profile => {
     const isSelf = profile._id.equals(req.user.profile._id)
     res.render("profiles/show", {
@@ -23,7 +24,6 @@ function show(req, res) {
       profile,
       isSelf,
       getRandomSnacks: () => {
-        // const snacks = ["🐈", "🐱", "😸", "😹", "😺", "😻", "😼", "😾", "🙀"]
         return snacks[Math.floor(Math.random() * snacks.length)]
       }
     })

@@ -48,6 +48,12 @@
       <%= isSelf ? "You": `${profile.name}` %> don't have any snacks(🍕 🍿 🍪 🧁), SAD!!
     </h2>
   <% } %>
+  <h2>Favorite Beers:</h2>
+    <ul>
+      <% profile.favorites.forEach(favorite => { %>
+          <li><%= favorite.name %></li>
+          <% }) %>
+    </ul>
 </main>
 
 <%- include('../partials/footer') %>
