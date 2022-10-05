@@ -2,8 +2,7 @@
 <%- include('./partials/nav') %>
 
 <main style="width: 800px, margin: 0 auto;">
-  <h1 class="mt-4">🍻Boston Beer Hall🍻</h1>
-  <h2 class="mt-2">Hello and Welcome <%= user ? user.profile.name : "friend" %></h2>
+  <h1 class="mt-4">Hello and Welcome to the 🍻Boston Beer Hall🍻 <%= user ? user.profile.name : "Please Sign In To Continue" %></h1>
   <% if (user?.profile.avatar) { %>
     <div class="mt-3 mb-3">
       <img
