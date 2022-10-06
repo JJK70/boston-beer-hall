@@ -33,9 +33,9 @@ Flexbox, billboards, buttons and form styling and functionality was used by impl
 User authorization was implemented using Google OAuth: [link](https://console.cloud.google.com/apis/)
 
 The images for the rotating billboard on the homepage are from Unsplash: [link](https://unsplash.com)
-- Image one is from: Kazeund
-- Image two is from: George Bakos
-- Image three is from: Meritt Thomas
+- Image one is from: Kazeund [link] (https://images.unsplash.com/photo-1441985969846-3e7c90531139?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+- Image two is from: George Bakos [link](https://images.unsplash.com/photo-1620219365994-f443a86ea626?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80)
+- Image three is from: Meritt Thomas [link] (https://images.unsplash.com/photo-1584225064785-c62a8b43d148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80)
 
 ## Ice Box ❆
 - Add polka music button
