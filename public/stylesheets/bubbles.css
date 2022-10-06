@@ -1,3 +1,4 @@
+<style>
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 .wrapper {
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  background: linear-gradient(180deg, #fffdd0 5%, #fffdd0, 50%, #fffdd0);
   position: absolute;
 }
 .wrapper h1 {
@@ -24,7 +25,7 @@
 .wrapper div {
   height: 60px;
   width: 60px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(169, 169, 169, 1.0);
   border-radius: 50px;
   position: absolute;
   top: 10%;
@@ -47,7 +48,7 @@ div .dot {
 }
 .wrapper div:nth-child(2) {
   top: 60%;
-  left: 80%;
+  left: 40%;
   animation: animate 10s linear infinite;
 }
 .wrapper div:nth-child(3) {
@@ -67,7 +68,7 @@ div .dot {
 }
 .wrapper div:nth-child(6) {
   top: 30%;
-  left: 60%;
+  left: 45%;
   animation: animate 5s linear infinite;
 }
 .wrapper div:nth-child(7) {
@@ -77,7 +78,7 @@ div .dot {
 }
 .wrapper div:nth-child(8) {
   top: 75%;
-  left: 60%;
+  left: 46%;
   animation: animate 10s linear infinite;
 }
 .wrapper div:nth-child(9) {
@@ -92,12 +93,12 @@ div .dot {
 }
 .wrapper div:nth-child(11) {
   top: 10%;
-  left: 90%;
+  left: 30%;
   animation: animate 9s linear infinite;
 }
 .wrapper div:nth-child(12) {
   top: 20%;
-  left: 70%;
+  left: 47%;
   animation: animate 7s linear infinite;
 }
 .wrapper div:nth-child(13) {
@@ -111,6 +112,81 @@ div .dot {
   animation: animate 6s linear infinite;
 }
 .wrapper div:nth-child(15) {
+  top: 90%;
+  left: 20%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(16) {
+  top: 22%;
+  left: 22%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(17) {
+  top: 63%;
+  left: 78%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(18) {
+  top: 42%;
+  left: 60%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(19) {
+  top: 67%;
+  left: 95%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(20) {
+  top: 92%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(21) {
+  top: 30%;
+  left: 94%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(22) {
+  top: 70%;
+  left: 97%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(23) {
+  top: 75%;
+  left: 98%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(24) {
+  top: 50%;
+  left: 96%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(25) {
+  top: 45%;
+  left: 93%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(26) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(27) {
+  top: 20%;
+  left: 88%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(28) {
+  top: 20%;
+  left: 90%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(29) {
+  top: 60%;
+  left: 95%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(30) {
   top: 90%;
   left: 80%;
   animation: animate 9s linear infinite;
