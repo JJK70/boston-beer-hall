@@ -31,11 +31,12 @@
   <% } %>
   <% if (profile.snacks.length)  {%>
     <h5 class="mt-3">
-      <%= isSelf ? "Your snacks are below" : `${profile.name}` %>!<br />Go watch some sports or your favorite show!
+      <%= isSelf ? 'Your snacks are below' : `${profile.name}` %>!Your snack and favorite beers are below.</h5>
+      <h5>Go watch some sports or your favorite show!
     </h5>
     <% profile.snacks.forEach(snack => { %>
       <h5 class="mb-0">
-        <%= snack.name %> is a <%= snack.type %> snack!
+        <h3 class="snack mt-2 mb-3"><%= snack.name %> is a <%= snack.type %> snack!</h3>
         <% if (isSelf) { %>   
         <form 
             action="/profiles/snacks/<%= snack._id %>?_method=DELETE" 
