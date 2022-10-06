@@ -37,6 +37,8 @@ The images for the rotating billboard on the homepage are from Unsplash: [link](
 - Image two is from: George Bakos [link](https://images.unsplash.com/photo-1620219365994-f443a86ea626?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80)
 - Image three is from: Meritt Thomas [link](https://images.unsplash.com/photo-1584225064785-c62a8b43d148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80)
 
+Polka mucic came from Free Music Archive: [link](https://freemusicarchive.org/genre/Polka/)
+
 ## Ice Box ❆
-- Add polka music button
 - Ability to favorite another persons beer
+- Add mobile functionality for NAV bar

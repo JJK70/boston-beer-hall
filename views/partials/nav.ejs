@@ -26,4 +26,16 @@
       data-logo_alignment="left"
     ></div>
   <% } %>
+  <button class="btn btn-info">Play Me Some Polka!</button>
+  <script type="text/javascript">
+  const audio = new Audio("../audio/Polkavant_Monsterpolka.mp3");
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      audio.volume = .02;
+      audio.play();
+    });
+  });
+
+  </script>
 </nav>
