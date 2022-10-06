@@ -20,6 +20,8 @@ Planning materials can be found here: [link](https://trello.com/b/etY7i4rU/bosto
 
 The favicon came from Favion.Io: [link](https://favicon.io/favicon-generator/)
 
+The favicon came from Codepen by Diyorbek Olimov: [link](https://codepen.io/diyorbek0309/pen/mdwbEve)
+
 The beer descriptions came from drinkwel.com: [link](https://www.drinkwel.com/blogs/drinkwel-blog/24634561-top-10-types-of-beer)
 
 Emojis came from Emojipedia: [link](https://emojipedia.org/)
@@ -38,6 +40,3 @@ The images for the rotating billboard on the homepage are from Unsplash: [link](
 ## Ice Box ❆
 - Add polka music button
 - Ability to favorite another persons beer
-- Implement Bubble animation
-
-https://codepen.io/diyorbek0309/pen/mdwbEve - Diyorbek Olimov
