@@ -1,6 +1,6 @@
 Welcome to the Boston Beer Hall!
 
-![Boston Beer Hall](./img/bbh_hp.jpeg "Boston Beer Hall")
+![Boston Beer Hall](/public/assets/img/bbh_hp.jpeg "Boston Beer Hall")
 
 ## GO TO THE BEER HALL HERE: [Boston Beer Hall](https://boston-beer-hall.fly.dev/)
 
