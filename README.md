@@ -30,7 +30,7 @@ The fonts used are from Google Fonts :[link](https://fonts.google.com/)
 
 Flexbox, billboards, buttons and form styling and functionality was used by implementing the Boostrrap CDN: [link](https://getbootstrap.com/")
 
-User authorization was implemented using Google OAuth - [link](https://console.cloud.google.com/apis/)
+User authorization was implemented using Google OAuth: [link](https://console.cloud.google.com/apis/)
 
 The images for the rotating billboard on the homepage are from Unsplash: [link](https://unsplash.com)
 - Image one is from: Kazeund
