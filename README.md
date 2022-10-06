@@ -1,4 +1,4 @@
-# Boston Beer Hall
+Welcome to the Boston Beer Hall!
 
 ![Boston Beer Hall](./img/bbh_hp.jpeg "Boston Beer Hall")
 
@@ -26,7 +26,7 @@ Emojis came from Emojipedia: [link](https://emojipedia.org/)
 
 The fonts used are from Google Fonts :[link](https://fonts.google.com/)
 
-Flexbox, billboards, buttons and form styling and functionality was used by implementing the Boostrrap CDN: [link](https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css")
+Flexbox, billboards, buttons and form styling and functionality was used by implementing the Boostrrap CDN: [link](https://getbootstrap.com/")
 
 User authorization was implemented using Google OAuth - [link](https://console.cloud.google.com/apis/)
 
