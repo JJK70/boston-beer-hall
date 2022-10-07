@@ -15,6 +15,7 @@ Welcome to the Boston Beer Hall(BBH)! BBH is where you can add your favorite bee
  * Bootstrap
  * Google OAuth
  * Mongoose
+ * Node.js
 
 Planning materials can be found here: [link](https://trello.com/b/etY7i4rU/boston-beer-hall)
 
