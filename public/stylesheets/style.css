@@ -117,3 +117,7 @@ nav > a {
 .music {
   margin-left: 20px;
 }
+
+#carouselExampleIndicators {
+  width: 1200px;
+}
