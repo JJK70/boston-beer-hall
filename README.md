@@ -21,7 +21,7 @@ Planning materials can be found here: [link](https://trello.com/b/etY7i4rU/bosto
 
 The favicon came from Favion.Io: [link](https://favicon.io/favicon-generator/)
 
-The favicon came from Codepen by Diyorbek Olimov: [link](https://codepen.io/diyorbek0309/pen/mdwbEve)
+The bubbles functionality came from Codepen by Diyorbek Olimov: [link](https://codepen.io/diyorbek0309/pen/mdwbEve)
 
 The beer descriptions came from drinkwel.com: [link](https://www.drinkwel.com/blogs/drinkwel-blog/24634561-top-10-types-of-beer)
 
